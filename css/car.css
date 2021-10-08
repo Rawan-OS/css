@@ -1,0 +1,323 @@
+
+body {
+    font-family: 'Cairo', sans-serif; 
+    background-color: #eff2f5 ;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+ /*header*/
+.header {
+  padding: 20px;
+}
+.header .header-container {
+    display: flex;
+    position: relative;
+    margin: -20px;
+    padding: 15px;
+    background: white;
+    width: auto;
+    align-items: center;
+} 
+.header .logo {
+    margin: 15px;
+    padding: 15px;
+    position: absolute;
+    right: 5%;
+}
+
+.header .links {
+    position: relative;
+    margin: 15px;
+ }
+
+ .header .links:hover .icon span:nth-child(2) {
+     width: 100%;
+ } 
+
+ .header .links .icon {
+     width: 30px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+     margin-left: 50px;
+    }
+ .header .links .icon span {
+     background-color: #333;
+     margin-bottom: 5px;
+     height: 2px;
+ }
+ .header .links .icon span:first-child {
+     width: 100%;
+ }
+ .header .links .icon span:nth-child(2) {
+     width: 60%;
+     transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+     -ms-transition: 0.5s;
+     -o-transition: 0.5s;
+}
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links ul {
+    list-style: none;
+    margin: 6px;
+    padding: 0;
+    position: absolute;
+    left: 0%;
+    background-color: white;
+    width: 350px;
+    height: 585px;
+    top: 40px;
+    color: #6c7a8d;
+    margin-left: 54px;
+    display: none;
+    z-index: 1;
+}
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -19px;
+  }
+.header .links:hover ul {
+    display: block;
+}
+.bol {
+    font-weight: bold;
+    color: #154f9c;
+    background-color: #154f9c26;
+}
+li {
+    padding: 16px 21px;
+    color: #6c7a8d ;
+}
+.space {
+  width: 15px;
+}
+a {
+    color: #222222ad;
+    text-decoration: none;
+    margin-left: 12px;
+}
+.mnue {
+    font-weight: 700;
+    padding-top: 29px;
+    padding-left: 48px;
+    padding-bottom: 24px;
+}
+.user {
+    color: #154f9c;
+}
+.sing {
+    color: #154f9c;
+}
+
+li:hover {
+    background-color:#dce9f5 ;
+}
+.sing:hover {
+    color:  #ec6234;
+}
+.user:hover {
+    color: #ec6234;
+}
+
+@media (max-width: 900px) {
+    .line {
+        display: none ;
+    }
+}
+.n {
+   border: solid  #ec6234 ;
+   background-color: white;
+   border-radius: 4px;
+   color: #ec6234;
+   padding: 4px 15px;
+   font-weight: 600;
+   border-width: thin;
+   margin: 10px;
+}
+.n:hover {
+    background-color: #ec6234;
+    color: white;
+}
+
+.e {
+    border: solid  #154f9c ;
+   background-color: white;
+   border-radius: 4px;
+   color: #154f9c;
+   padding: 3px 13px;
+   font-weight: 600;
+   border-width: thin;
+   margin: 10px;
+}
+.l ,
+.i {
+    color: #154f9c;
+    font-weight: 600;
+    margin: 20px;
+}
+/* end header */ 
+/* start section */
+
+.write {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-end;
+    padding-top: 67px;
+    padding-right: 150px;
+    font-weight: bold;
+    color: #1b134c;
+}
+@media (max-width: 1300px) {
+    .write { 
+        padding-right: 49px;
+    }
+}
+
+.intro-container p {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: 600;
+  align-self: flex-end;
+}
+.write strong {
+    font-weight: bolder;
+    font-size: 49px;
+    align-self: flex-end;
+}
+ h2 {
+    align-self: flex-end;
+    padding-bottom: -10px;
+}
+.read {
+    background-color: #ed4f25;
+    font-weight: 700;
+    border-radius: 4px;
+    max-width: 286px;
+    height: 56px;
+    background-image: url(https://syarahcdn.syarah.com/syarah/bundles/arrShow.svg);
+    background-repeat: no-repeat;
+    color: #fff;
+    line-height: 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    transition: .2s;
+    align-self: flex-end;
+    background-position: 15px center;
+    width: 500px; 
+    text-align: end;
+
+    }
+
+.read:hover {
+    background-color: #d65428;
+}
+
+a:hover {
+    text-decoration: none;
+    }
+
+    @media (max-width: 1024px) {
+     .read {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    font-size: 18px;
+        }
+      h2 {
+          align-self: center;
+      }
+      strong {
+        margin-right: 285px;
+    }
+      p {
+        margin-right: 285px;
+    }
+  }
+  .truck {
+    display: flex;
+    margin-right: 420px;
+    width: 660px;
+    margin-top: -280px;
+}
+  
+@media (max-width: 1200px) {
+  .truck {
+      margin-left: -35px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .truck {
+    }
+}
+.armor {
+    position: relative;    
+    color: #0fb76b;
+    margin-left: 1040px;
+    margin-right: 0px;
+    margin-top: -70px;
+    font-weight: 100px;
+    font-size: 13px;
+}
+.green {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 170px;
+    margin-top: -30px;
+}
+.armor ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-left: -190px;
+}
+.armor li {
+    padding: 16px 5px;
+    display: flex;
+}
+
+@media (max-width: 1280) {
+    .armor {
+        margin-left: 990px;
+   }
+   .armor ul {
+    margin-left: -150px;
+   }
+}
